@@ -145,6 +145,18 @@ h5:hover {
     text-decoration: underline;
 }
 
+
+
+/* Mobile burger module */
+@media (max-width: 768px) {
+    .main-header > .nav {
+        background: black;
+        width: 100%; /* если не указать width в 1000 px, то чёрная полоса будет выезжать за границу картинки */
+        display: none;
+    }
+
+}
+
 @media (min-width: 768px) {
 
     .row-one {
@@ -156,11 +168,9 @@ h5:hover {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     } 
-    /* .row-one {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        padding: 20px;
+   
+    /*Burger's hiding */
+    .bg-black {
+        display:none; 
     }
-     */
 }
